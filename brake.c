@@ -16,7 +16,8 @@ a loop ends, the code following the body of the loop takes over. When break appe
 loop’s body, break terminates that loop immediately, and the rest of the program continues.*/
     for (i = 0; i < 10; i++)
     {
-        printf("%d ", i) if (i == 4)
+        printf("%d ", i);
+        if (i == 4)
         {
             break;
         }
@@ -29,7 +30,7 @@ to compute the average. */
     float stTest, avg, total = 0.0;
 
     // Asks for up to 25 tests
-    for (numTest = 0, numTest < 25, numTest++)
+    for (numTest = 0; numTest < 25; numTest++)
     {
         // Get the test scores, and check if -1 was entered
         printf("\nwhat's the next student test score?");
