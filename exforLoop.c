@@ -48,4 +48,6 @@ void main()
             leastRating = rating;
         }
     }
+    printf("your favourite movie was %s", favourite);
+    printf("your least favourite movie was %s", least);
 }
