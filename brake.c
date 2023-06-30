@@ -43,4 +43,9 @@ to compute the average. */
     }
     avg = total / numTest;
     printf("\nThe average is %.1f%%.\n", avg);
+    /*To print the percent sign at the end of the final average, two % characters have to be
+used in the printf() control string. C interprets a percent sign as a control code
+unless you put two of them together, as done in this program. Then it still interprets the
+first percent sign as a control code for the second. In other words, the percent sign is a
+control code for itself.*/
 }
