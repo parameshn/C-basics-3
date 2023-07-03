@@ -1,0 +1,10 @@
+Runtime and compile time are two distinct phases in the execution of a computer program.
+
+    1. Compile Time : Compile time refers to the phase during which the source code of a program is translated into machine code by a compiler.This phase occurs before the program is executed.During compile time,
+    the compiler performs various tasks such as syntax checking, type checking, optimization, and generating the executable code.If there are any compilation errors or warnings, they are reported during this phase.The output of the compile time is an executable file or object code that can be run later.
+
+                                                                                                                                                                                                                                                                              2. Runtime : Runtime refers to the period when a program is being executed.It starts when the compiled program is loaded into memory and begins its execution.During runtime,
+    the program performs its intended operations, interacts with the user or other systems, and utilizes system resources such as CPU, memory, and I / O devices.Any actions or behavior of the program that occur during its execution fall under the runtime phase.
+
+                                                                                                                                                                                In summary,
+    compile time is the phase where the source code is transformed into executable code, and runtime is the phase where the program is actually executed, performing its operations and producing results.
