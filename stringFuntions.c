@@ -2,7 +2,7 @@
 
 /*The string.h header file contains descriptions for more functions than just strcpy() and strlen().
 
-
+The string.h header file contains descriptions for more functions than just strcpy() and strlen().
 
  This section explains the strcat() function that lets you merge two character arrays, as long as the arrays hold strings. strcat() stands for string concatenation.
 
