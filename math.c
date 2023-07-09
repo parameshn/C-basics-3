@@ -42,4 +42,7 @@ conversion code.*/
 
     m -= 1;
     printf("\n\n%f", m);
+    /*The negative values make sense when you think about the direction of negative
+numbers. The next integer down from –18.5 is –19. The next integer up from –18.5 is –
+18.*/
 }
