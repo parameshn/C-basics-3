@@ -9,6 +9,7 @@ atan(x) = returns the arc tangent of angle x*/
 
 #include <stdio.h>
 #include <math.h>
+#include <string.h>
 void main()
 {
 
@@ -53,4 +54,27 @@ The base 10 logarithm, commonly denoted as "log(x)" or "log₁₀(x)", is a loga
 For example, log(10) = 1, log(100) = 2, log(1000) = 3, and so on. The base 10 logarithm is often used in everyday calculations, particularly in measurements involving magnitudes, orders of magnitude, or conversions between logarithmic and linear scales.
 
 Both the natural logarithm and base 10 logarithm are essential tools in mathematics and have their respective applications in various fields.*/
+
+    /* This program demonstrates the math functions from the C math.h
+    library, so that you can get your homework right thanks to some
+    quick-and-easy programming. */
+
+    printf("it's time to do your math homework!\n");
+
+    printf("section 1: square root\n");
+    printf("the sqquare root of 49.0 is %.1f\n", sqrt(4.0));
+    printf("the square root of 149.0is %.1f\n", sqrt(149.0));
+
+    printf("\n\nsection 2: powers\n");
+    printf("4 raised to the 3rd power is %1.f\n", pow(4.0, 3.0));
+    printf("7 raised to the power is %.1f\n", pow(7.0, 5.0));
+
+    printf("\n\nsection 3: trignometry\n");
+    printf("th cosine of a 60 degree angle is %.3f\n", cos((60 * (3.14159 / 180))));
+    printf("the tangent of 75 degree angle is %.3f\n", tan((75 * (3.1415 / 180.0))));
+
+    printf("\n\nsection 4: log functions\n");
+    printf("e rasied to 2 is %.3f\n", exp(2));
+    printf("the natural log of 5 is %.3f\n", log(5));
+    printf("the base-10 log of 5 is %.3f\n", log10(5));
 }
