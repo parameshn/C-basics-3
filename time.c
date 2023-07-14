@@ -1,6 +1,17 @@
 ////////////////////////time_t
+///////srand()
+/////time()
 
 // You must include time.h before seeding the random number generator with the time of day,
+
+/*Use srand() to seed the random number generator. The
+number inside the srand() parentheses must be different every time you run the program, unless you
+want to produce the same set of random values.
+****
+The trick to giving srand() a different number each run is to put the exact time of day inside the
+srand() parentheses. Your computer keeps track of the time of day, down to hundredths of a
+second. So first declare a time variable, using the time_t declaration, and then send its address
+(using the & character at the front of the variable name) to the srand() function.*/
 
 /*You might always want a different set of random numbers produced each time a
 program runs. Games need such randomness. However, many simulations and
@@ -97,3 +108,32 @@ void main()
                total2, total1);
     }
 }
+
+//// use of srand(time(&t));
+
+///
+/*In the above program, the line `srand(time(&t));` is utilized to seed the random number generator before generating random values for the dice rolls. Here's how it is used in the program:
+
+1. The program includes the necessary header files: `stdio.h`, `string.h`, `time.h`, and `ctype.h`.
+
+2. The `time_t t;` declaration creates a variable `t` of type `time_t`, which will be used to store the current time.
+
+3. `srand(time(&t));` seeds the random number generator. The `time(&t)` function retrieves the current time and stores it in the `t` variable. The `&t` is passed as an argument to `time` to obtain its address. This address is used as the seed for `srand`, ensuring a different seed value each time the program runs.
+
+4. The program proceeds with rolling two dice by generating random numbers using `rand()`. The expressions `(rand() % 5) + 1` generate random numbers between 1 and 6 inclusive, simulating the roll of a six-sided die. These random values are stored in the variables `dice1` and `dice2`.
+
+5. The total of the two dice rolls is calculated and stored in the variable `total1`.
+
+6. The program prompts the user to guess if the next roll will be higher, lower, or the same.
+
+7. The user's guess is obtained through `scanf` and stored in the variable `ans`.
+
+8. The `toupper(ans)` function call converts the user's input to uppercase, ensuring case-insensitive comparison in the subsequent code.
+
+9. The second roll of the dice is performed, and the random values are stored in `dice1` and `dice2`.
+
+10. The total of the second roll is calculated and stored in `total2`.
+
+11. The program compares the user's guess (`ans`) with the two totals (`total1` and `total2`) and provides feedback on whether the guess was correct or not.
+
+In summary, the `srand(time(&t))` call ensures that each run of the program starts with a different seed for the random number generator, generating different sequences of random numbers for the dice rolls.*/
